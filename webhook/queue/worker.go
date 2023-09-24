@@ -4,9 +4,9 @@ import (
 	"context"
 	"log"
 	"time"
-	"webhook/sender"
+	"webhook/webhook/sender"
 
-	redisClient "webhook/redis"
+	redisClient "webhook/webhook/redis"
 )
 
 func ProcessWebhook(ctx context.Context, webhookQueue chan redisClient.WebHookPayload) {
